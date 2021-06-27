@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #edf0f1;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+.navigation-items {
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-items a {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #edf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo a {
+    font-weight: bold;
+}
+
+.nav-links a {
+    padding-left: 45px;
+    opacity: 0.8;
+}
+
+
+.main-content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+
+
+.footer {
+    opacity: 0.8;
+    height: 10%;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
