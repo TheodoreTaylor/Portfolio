@@ -1,15 +1,7 @@
 
 <nav>
-    <div class="navigation-items">
-
-        <div class="logo">
-            <a href="/">BT</a>
-        </div>
-
-        <div class="nav-links">
-            <a href="{% url 'about' %}">About</a>
-            <a href="{% url 'projects' %}">Projects</a>
-            <a href="{% url 'contact' %}">Contact</a>
-        </div>
-    </div>
+    <a href="/"><img class="corner-logo" src="../static/images/portfolio.png"></a>
+    <a href="{% url 'projects' %}">Projects</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact</a>
 </nav>

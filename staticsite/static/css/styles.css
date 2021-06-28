@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: #edf0f1;
+    font-family: 'Lato', sans-serif;
 }
 
 body, html {
@@ -20,39 +20,32 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
     padding-top: 25px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 25px;
 }
 
-.navigation-items {
-    display: flex;
-    height: 10%;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.navigation-items a {
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 15px;
+nav a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
     color: #edf0f1;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    opacity: 0.6;
 }
 
-.logo a {
-    font-weight: bold;
+a:hover{
+    opacity: 1;
 }
-
-.nav-links a {
-    padding-left: 45px;
-    opacity: 0.8;
-}
-
 
 .main-content {
+    padding-right: 50px;
+    padding-left: 50px;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -61,25 +54,98 @@ nav {
 }
 
 h1 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: initial;
+  letter-spacing: 15px;
+  text-transform: capitalize;
   font-size: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
   font-size: 25px;
+  padding-bottom: 15px;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
 }
 
 
-
-.footer {
+.social-links {
     opacity: 0.8;
     height: 10%;
-    padding-right: 50px;
-    padding-left: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.projects-board {
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.project {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: solid white;
+    background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    text-align: center;
+    padding-top: 2px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+.project-image {
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.icons {
+    opacity: 0.8;
+    height: 10%;
+    display: flex;
+}
+
+
+.image-container {
+    height: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+}
+
+.corner-logo {
+  max-width: 40px;
+  object-fit: contain;
+}
+
+.title {
+    align-self: flex-start;
 }
