@@ -22,6 +22,7 @@ def projects(request):
         request, "staticsite/projects.html",
     )
 
+
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)

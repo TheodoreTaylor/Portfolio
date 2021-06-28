@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,7 +41,7 @@ nav a:active {
     opacity: 1;
 }
 
-a:hover{
+a:hover {
     opacity: 1;
 }
 
@@ -55,20 +56,20 @@ a:hover{
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: initial;
-  letter-spacing: 15px;
-  text-transform: capitalize;
-  font-size: 50px;
-  text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: initial;
+    letter-spacing: 15px;
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: center;
 }
 
 h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  letter-spacing: 5px;
-  font-size: 25px;
-  padding: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 25px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -79,7 +80,6 @@ i {
 }
 
 
-
 .projects-board {
     display: flex;
     flex-wrap: wrap;
@@ -88,9 +88,9 @@ i {
 }
 
 .project {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
 }
 
 .card {
@@ -105,7 +105,7 @@ i {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border: solid white;
     background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
     background: rgba(0, 0, 0, 0.8);
@@ -120,8 +120,8 @@ i {
 }
 
 .project-image {
-  max-width: 80%;
-  object-fit: contain;
+    max-width: 80%;
+    object-fit: contain;
 }
 
 .icons {
@@ -140,8 +140,8 @@ i {
 }
 
 .corner-logo {
-  max-width: 40px;
-  object-fit: contain;
+    max-width: 40px;
+    object-fit: contain;
 }
 
 .title {
@@ -149,9 +149,9 @@ i {
 }
 
 th, td {
-  padding: 10px;
+    padding: 10px;
 
-  text-align: end;
+    text-align: end;
     vertical-align: top;
     background-color: transparent; /* Remove background fill */
     text-transform: uppercase; /* Make text all uppercase */
@@ -164,7 +164,7 @@ th, td {
 
 
 input, textarea {
-    width:100%;
+    width: 100%;
     color: #ffffff;
     font-size: 15px;
     background-color: transparent;
@@ -173,7 +173,7 @@ input, textarea {
 }
 
 button {
-    width:100%;
+    width: 100%;
     height: 30px;
     font-size: 15px;
     background-color: transparent; /* Remove background fill */
@@ -182,8 +182,8 @@ button {
 }
 
 input:valid, textarea:valid {
-  background-color: transparent; /* Remove background fill */
-  opacity: 0.8;
+    background-color: transparent; /* Remove background fill */
+    opacity: 0.8;
 }
 
 i {
