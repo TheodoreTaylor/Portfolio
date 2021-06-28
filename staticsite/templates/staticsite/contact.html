@@ -5,37 +5,19 @@
 {% block body %}
         <h1>contact</h1>
         <div class="container">
-        <h4>Contact us directly if you have any questions</h4><br>
+        <h4>message me here.....</h4><br>
             <form method="post">
                 {% csrf_token %}
-                {{form.as_p}}
-                <button type="submit">Submit</button>
+                <table class="contact-table">
+                    {{form.as_table}}
+                    <tr><th></th><td><button type="submit">Submit</button></td></tr>
+                </table>
             </form>
         </div>
     <br>
-        <h4>..or use one of the links below</h4><br>
-        <div class="social-links">
+        <h4>..or find me online</h4><br>
 
-        <a href="mailto:taftaylor@gmail.com">
-            <i class="fa fa-envelope-square fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300"
-               data-aos-delay="300" data-aos-once="true" ></i>
-        </a>
-
-        <a href="https://github.com/TheodoreTaylor" target="_blank">
-            <i class="fab fa-github-square fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300"
-               data-aos-delay="300" data-aos-once="true" ></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/theodore-taylor-70965569/" target="_blank">
-            <i class="fa fa-linkedin-square fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300"
-               data-aos-delay="300" data-aos-once="true" ></i>
-        </a>
-
-        <a href="https://www.youtube.com/channel/UC_E0GhOQtCubGgeSLRQcUoQ" target="_blank">
-            <i class="fa fa-youtube-play fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300"
-               data-aos-delay="300" data-aos-once="true"
-               ></i>
-        </a>
+    {% include "staticsite/iconbar.html" %}
 
     </div>
 {% endblock %}
