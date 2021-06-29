@@ -116,6 +116,7 @@ i {
 
 #icons-box {
     justify-content: space-around;
+    padding-bottom: 1rem;
 }
 
 .image-container {
@@ -169,6 +170,7 @@ input:valid, textarea:valid {
 }
 
 @media only screen and (min-width: 600px) {
+
     .contact-box {
         zoom: 1.2;
         -moz-transform: scale(1.2);
@@ -176,6 +178,7 @@ input:valid, textarea:valid {
 }
 
 @media only screen and (min-height: 1024px) {
+
     .contact-box {
         zoom: 1.5;
         -moz-transform: scale(1.5);
@@ -184,6 +187,7 @@ input:valid, textarea:valid {
 
 
 @media only screen and (min-height: 1366px) {
+
     .contact-box {
         zoom: 2;
         -moz-transform: scale(2);
@@ -239,11 +243,21 @@ input:valid, textarea:valid {
         }
     }
 
+    @media (max-height: 666px) {
+
+        .main-content {
+            zoom: 0.9;
+            -moz-transform: scale(0.9);
+        }
+    }
+
     @media (min-height: 1024px) {
+
         #icons-box {
             zoom: 1.6;
             -moz-transform: scale(1.6);
         }
+
     }
 
 }
